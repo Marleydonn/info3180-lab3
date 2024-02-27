@@ -10,6 +10,17 @@
 
     <title>Flask Starter App</title>
 
+    {% with messages =
+    get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flashes">
+        {% for category, message in messages %}
+           <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
     <!-- Bootstrap -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,7 +33,7 @@
     </header>
     <main>
         <div class="container">
-            {% block main %}{% endblock %}
+           {% block main %}{% endblock %} 
         </div>
     </main>
     <footer>
