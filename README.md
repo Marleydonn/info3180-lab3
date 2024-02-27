@@ -2,6 +2,8 @@
 
 This is the starter code for Lab 3
 
+THIS IS LAB 3 FOR JAHMARLEY ROBINSON(620150690)
+
 Remember to always create a virtual environment and install the packages in your requirements file
 
 ```bash
